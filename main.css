@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../imagens/wall.png);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid gold;
+}
+
+/* Vai ficar em linhas no painel */
+.panel {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px; /* Espaço entre os quadrados */
+    justify-content: center;
+    align-content: center;
+   
+}
+.square {
+    height: 150px;
+    width: 150px; /* Adicionei largura para garantir proporção */
+    border: 1px solid black;
+    background-color: rgb(50, 228, 168);
+}
+
+.enemy{
+   background-image: url(../imagens/ralph.png);
+   background-size: cover;
+}
+
+.menu-live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+
+margin-top: 1rem;
+}
